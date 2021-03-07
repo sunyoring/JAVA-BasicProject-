@@ -80,5 +80,22 @@ public class Variable {
 		System.out.println("height : " + height);
 		
 	}
-	
+	public void testFinal() {
+		int size; //변수
+		final int SIZE; //상수 : 일반적으로 대문자로 표기함
+
+		size = 10;
+		SIZE = 10;
+		
+		System.out.println("==== 값 변경 전 ====");
+		System.out.println("size : " + size);
+		System.out.println("SIZE : " + SIZE);
+		
+		//변수의 값 변경
+		size = 20;
+		// SIZE = 20; 에러가 발생. 상수는 초기화이후 다른 데이터 입력 불가
+		System.out.println("==== 값 변경 후 ====");
+		System.out.println("size : " + size);
+		System.out.println("SIZE : " + SIZE);
+	}
 }
