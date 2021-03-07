@@ -72,13 +72,13 @@ public class Variable {
 		age = sc.nextInt();
 		System.out.print("키를 입력하세요 : ");
 		height = sc.nextDouble();
+		sc.close();	
 		
 		System.out.println(name + "님의 개인정보");
 		System.out.println("gender : " + gender);
 		System.out.println("age : " + age);
 		System.out.println("height : " + height);
 		
-		sc.close();
-		
 	}
+	
 }
