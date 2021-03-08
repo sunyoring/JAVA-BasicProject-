@@ -109,5 +109,14 @@ public class Variable {
 		System.out.println("byte의 최대값 + 1 : " + bnum);
 		bnum -= 1;
 		System.out.println("byte의 최소값 - 1 : " + bnum);
+		
+		int num1 = 100000;
+		int num2 = 30000;
+//		int result = num1*num2;
+		// int의 저장 가능 범위는 약 21억이므로 30억이라는 값을 대입하면 오버플로우 발생.
+		long result = (long)num1*num2;
+		//int보다 저장 가능 범위가 넓은 long타입으로 강제 형변환.
+		System.out.println("num1*num2의 계산 결과 : " + result);
+		
 	}
 }
