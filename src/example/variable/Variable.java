@@ -161,4 +161,25 @@ public class Variable {
 		short sum2 = (short)(bnum + snum);
 		System.out.println("sum2 : " + sum2);
 	}
+	public void testDataLoss() {
+		//데이터 손실 테스트
+		
+		//정수->실수(자동 형변환) 데이터 범위가 큰 쪽-> 작은 쪽 일때는 데이터손실없음.
+		long lnum = 100;
+		float fnum = lnum;
+		System.out.println("fnum : " + fnum);
+		
+		//실수->정수(강제 형변환)
+		//소수점 이하를 절삭하므로 데이터 손실 발생.
+		double dnum = 10.5;
+		int inum = (int)dnum;
+		System.out.println("inum : " + inum);
+		
+		//강제 형변환으로 인해 예상치 못한 데이터 손실이 발생할 수 있으므로 주의!!!
+		int num = 290;
+		System.out.println("num : " + num);
+		
+		byte bnum = (byte)num;
+		System.out.println("bnum : " + bnum);
+	}
 }

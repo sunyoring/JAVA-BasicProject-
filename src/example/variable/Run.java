@@ -9,7 +9,8 @@ public class Run {
 //		var.testFinal();
 //		var.testOverflow();
 //		var.testCasting();
-		var.testCasting2();
+//		var.testCasting2();
+		var.testDataLoss();
 	}
 
 }
