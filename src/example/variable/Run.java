@@ -8,7 +8,8 @@ public class Run {
 //		var.changeValue();
 //		var.testFinal();
 //		var.testOverflow();
-		var.testCasting();
+//		var.testCasting();
+		var.testCasting2();
 	}
 
 }
