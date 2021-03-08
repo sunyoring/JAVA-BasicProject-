@@ -150,7 +150,7 @@ public class Variable {
 		long lsum = inum + lnum ;
 		System.out.println("lsum : " + lsum);
 		
-		//byte, shourt의 연산 결과  : int
+		//byte, short의 연산 결과는 반드시 int형이 된다.
 		byte bnum = 1;
 		short snum = 2;
 		
@@ -158,7 +158,7 @@ public class Variable {
 		System.out.println("sum1 : " + sum1);
 		
 		//byte or short의 결과를 얻기 위해 강제 형변환
-		short sum2 = (byte)(bnum + snum);
+		short sum2 = (short)(bnum + snum);
 		System.out.println("sum2 : " + sum2);
 	}
 }
