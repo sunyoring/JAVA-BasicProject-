@@ -6,7 +6,9 @@ public class Run {
 		Variable var = new Variable();
 //		var.inintVariable();
 //		var.changeValue();
-		var.testFinal();
+//		var.testFinal();
+		var.testOverflow();
+		
 	}
 
 }
