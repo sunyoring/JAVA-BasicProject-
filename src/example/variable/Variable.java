@@ -98,4 +98,9 @@ public class Variable {
 		System.out.println("size : " + size);
 		System.out.println("SIZE : " + SIZE);
 	}
+	public void testOverflow() {
+		//데이터 오버플로우 테스트
+		System.out.println("byte의 최댓값 : " + Byte.MAX_VALUE);
+		System.out.println("byte의 최솟값 : " + Byte.MIN_VALUE);
+	}
 }
