@@ -116,7 +116,24 @@ public class Variable {
 		// int의 저장 가능 범위는 약 21억이므로 30억이라는 값을 대입하면 오버플로우 발생.
 		long result = (long)num1*num2;
 		//int보다 저장 가능 범위가 넓은 long타입으로 강제 형변환.
-		System.out.println("num1*num2의 계산 결과 : " + result);
+		System.out.println("num1*num2의 계산 결과 : " + result);		
+	}
+	public void testCasting() {
+		//형변환 테스트
+		boolean bool = true;
+		//bool = 1; //형변환 불가
 		
+		//char -> int : 자동 형변환
+		int num = 'A';
+		System.out.println("num : " + num);
+		
+		//char에 정수값 저장 가능 (숫자에 해당하는 유니코드 문자)
+		char ch = 66;
+		System.out.println("ch : " + ch);
+		//ch = -66; //과 같은 음수는 불가능
+		
+		//int -> char : 강제 형변환
+		char ch2 = (char)num;
+		System.out.println("ch2 : " + ch2);
 	}
 }
