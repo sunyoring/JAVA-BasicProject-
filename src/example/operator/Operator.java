@@ -44,5 +44,33 @@ public class Operator {
 		
 		System.out.println("1과 100사이의 수 ?  " + (num3 > 1 && num3 < 100));
 		
+		//복합대입연산자
+		//코드가 간결하며 메모리에 직접 연산을 수행하여 연산속도가 빠름
+		int num4 = 5;
+		num4 += 10;
+		System.out.println("num4 : " + num4); //15
+		
+		num4 -= 10;
+		System.out.println("num4 : " + num4); //5
+		
+		num4 *= 10;
+		System.out.println("num4 : " + num4); //50
+		
+		num4 /= 10;
+		System.out.println("num4 : " + num4); //5
+		
+		num4 %= 10;
+		System.out.println("num4 : " + num4); //5		
 	}
+	public void operatorTest3() {
+		//삼항연산자
+		//사용자에 값을 하나 받아서 그 값이 양수인지 음수인지 0인지 판별
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 하나 입력 : ");
+		int num = sc.nextInt();
+		
+		String result = num > 0 ? "양수이다" : num==0 ? "0이다" : "음수이다";	
+		System.out.println(result);
+	}
+		
 }
