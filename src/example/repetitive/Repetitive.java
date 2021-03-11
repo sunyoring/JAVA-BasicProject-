@@ -40,4 +40,26 @@ public class Repetitive {
 			System.out.println(k++ + "번째 k 출력");
 		}
 	}
+	public void testDowhile() {
+		//초기식 : 외부
+		int i =0;
+		do {
+			System.out.println(i++ +"번째 i 출력");
+			// 증감식
+		} while(i < 10); // 조건식이 맨 마지막, 세미콜론 사용
+		
+		//감소식
+		int j = 10;
+		do {
+			System.out.println(j-- + "번 째 j출력");
+			
+		}while(j > 0);
+		
+		//do - while 문 무한 루프
+		int k=0;
+		do {
+			System.out.println(k++ + "번 째 k출력");
+		}while(true);
+		
+	}
 }
