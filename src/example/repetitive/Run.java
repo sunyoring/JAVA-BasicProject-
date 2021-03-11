@@ -6,7 +6,8 @@ public class Run {
 		Repetitive re = new Repetitive();
 //		re.testFor();
 //		re.testWhile();
-		re.testDowhile();
+//		re.testDowhile();
+		re.testGugudan();
 	}
 
 }
