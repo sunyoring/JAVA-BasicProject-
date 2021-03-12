@@ -51,6 +51,22 @@ public class RepetitivePractice {
 			}
 			System.out.println();
 		}
+	}
+
+	public void method3() {
+		// 문자열 무한 반복 입력
+		Scanner sc = new Scanner(System.in);
+		String result = "";
+		while (true) {
+			System.out.println("문자열  입력 : ");
+			String str = sc.nextLine();
+			if (str.equals("stop")) {
+				System.out.println("결과 : " + result);
+				break;
+			}
+			result += str;
+			System.out.println("결과 : " + result);
+		}
 
 	}
 }
