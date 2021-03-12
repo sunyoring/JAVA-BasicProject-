@@ -10,7 +10,8 @@ public class Run {
 //		re.testGugudan();
 //		re.testBreak();
 //		re.testFor2();
-		re.testContinue();
+//		re.testContinue();
+		re.testGugudan2();
 	}
 
 }

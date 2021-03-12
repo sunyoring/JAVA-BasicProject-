@@ -133,27 +133,45 @@ public class Repetitive {
 		}
 	}
 
-	public void testContinue() {
-		//1~100까지의 합(3과 5의 배수 제외)을 출력
+	public void testContinue() { // continue; 아래로는 실행하지 않고 다시 반복문을 실행
+		// 1~100까지의 합(3과 5의 배수 제외)을 출력
 		int sum = 0;
-		for(int i = 1; i <=100; i++) {
-			if(i % 3 == 0 || i % 5 ==0) {
+		for (int i = 1; i <= 100; i++) {
+			if (i % 3 == 0 || i % 5 == 0) {
 				continue;
 			}
 			sum += i;
 		}
 		System.out.println("sum : " + sum);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	}
+
+	public void testGugudan2() {
+		// 분기문을 이용한 중첩 반복문 구구단
+
+		// for문으로 구구단 짝수단 (2,4,6,8)단만 구현.
+		for (int i = 2; i < 10; i++) {
+			if (i % 2 != 0)
+				continue;
+			// continue를 사용하지않고 증감식을 i+=2로 즉, 2씩 증가시키는 것으로도 구현가능하다.
+			System.out.println("==== " + i + "단 ====");
+			for (int j = 1; j < 9; j++) {
+				System.out.println(i + " X " + j + " = " + i * j);
+			}
+		}
+
+		// while문으로 구구단 홀수곱만 구현
+		int i = 2;
+		while (i < 10) {
+			System.out.println("==== " + i + "단 ====");
+			int j = 0;
+			while (j < 10) {
+				j++;
+				if (j % 2 == 0)
+					continue;
+				System.out.println(i + " X " + j + " = " + i * j);
+			}
+			i++;
+		}
 	}
 
 }
