@@ -112,13 +112,13 @@ public class RepetitivePractice {
 			if (select == 'n' || select == 'N') {
 				System.out.println("================");
 				if (ame != 0) {
-					System.out.println("¾Æ¸Þ¸®Ä«³ë" + ame + "ÀÜ : " + ame * 3500 + "¿ø");
+					System.out.println("¾Æ¸Þ¸®Ä«³ë " + ame + "ÀÜ : " + ame * 3500 + "¿ø");
 				}
 				if (latte != 0) {
-					System.out.println("Ä«Æä¶ó¶¼" + latte + "ÀÜ : " + latte * 4100 + "¿ø");
+					System.out.println("Ä«Æä¶ó¶¼ " + latte + "ÀÜ : " + latte * 4100 + "¿ø");
 				}
 				if (vanilla != 0) {
-					System.out.println("¹Ù´Ò¶ó¶ó¶¼" + vanilla + "ÀÜ : " + vanilla * 4300 + "¿ø");
+					System.out.println("¹Ù´Ò¶ó¶ó¶¼ " + vanilla + "ÀÜ : " + vanilla * 4300 + "¿ø");
 				}
 				System.out.println("================");
 				System.out.println("ÃÑ¾× : " + (ame * 3500 + latte * 4100 + vanilla * 4300) + "¿ø");
