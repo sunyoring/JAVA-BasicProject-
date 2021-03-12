@@ -1,5 +1,7 @@
 package example.repetitive;
 
+import java.util.Scanner;
+
 public class Repetitive {
 	public void testFor() {
 		// for(초기식; 조건식; 증감식)
@@ -79,6 +81,22 @@ public class Repetitive {
 			while (j < 10) {
 				System.out.println(i + " x " + j + " = " + i * j);
 				j++;
+			}
+			i++;
+		}
+	}
+
+	public void testBreak() {
+		// 숫자를 입력 받아 받은 숫자만큼만 반복적으로 출력 후 종료
+		Scanner sc = new Scanner(System.in);
+		System.out.println("반복할 횟수 입력 : ");
+		int num = sc.nextInt();
+
+		int i = 1;
+		while (true) {
+			System.out.println(i + "번째 i 출력");			
+			if (i == num) {
+				break;
 			}
 			i++;
 		}
