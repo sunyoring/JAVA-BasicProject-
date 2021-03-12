@@ -9,7 +9,8 @@ public class Run {
 //		re.testDowhile();
 //		re.testGugudan();
 //		re.testBreak();
-		re.testFor2();
+//		re.testFor2();
+		re.testContinue();
 	}
 
 }

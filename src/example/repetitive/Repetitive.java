@@ -86,7 +86,7 @@ public class Repetitive {
 		}
 	}
 
-	public void testBreak() {
+	public void testBreak() { // break를 만나면 가장 가까운 반복문을 종료한다.
 		// 숫자를 입력 받아 받은 숫자만큼만 반복적으로 출력 후 종료
 		Scanner sc = new Scanner(System.in);
 		System.out.println("반복할 횟수 입력 : ");
@@ -94,46 +94,55 @@ public class Repetitive {
 
 		int i = 1;
 		while (true) {
-			System.out.println(i + "번째 i 출력");			
+			System.out.println(i + "번째 i 출력");
 			if (i == num) {
 				break;
 			}
 			i++;
 		}
 	}
+
 	public void testFor2() {
-		//초기식 생략 for문
-		int i=0;
-		for(;i<10;i++) {
+		// 초기식 생략 for문
+		int i = 0;
+		for (; i < 10; i++) {
 			System.out.println(i + "번째 i 출력");
 		}
-		//조건식 생략 for문
-		for(int j = 0; ;j++) {
-			if(j < 10 ) {
-				System.out.println(j+"번째 j 출력");
-			}else {
+		// 조건식 생략 for문
+		for (int j = 0;; j++) {
+			if (j < 10) {
+				System.out.println(j + "번째 j 출력");
+			} else {
 				break;
 			}
 		}
-		//증감식 생략 for문
-		for(int k = 0; k < 10;) {
+		// 증감식 생략 for문
+		for (int k = 0; k < 10;) {
 			System.out.println(k + "번째 k 출력");
 			k++;
 		}
-		//모두 생략
+		// 모두 생략
 		int l = 0;
-		for(;;) {
-			if(l < 10) {
+		for (;;) {
+			if (l < 10) {
 				System.out.println(l + "번째 l 출력");
-			}else {
+			} else {
 				break;
 			}
 			l++;
 		}
-		
-		
-		
-		
+	}
+
+	public void testContinue() {
+		//1~100까지의 합(3과 5의 배수 제외)을 출력
+		int sum = 0;
+		for(int i = 1; i <=100; i++) {
+			if(i % 3 == 0 || i % 5 ==0) {
+				continue;
+			}
+			sum += i;
+		}
+		System.out.println("sum : " + sum);
 		
 		
 		
@@ -146,4 +155,5 @@ public class Repetitive {
 		
 		
 	}
+
 }
