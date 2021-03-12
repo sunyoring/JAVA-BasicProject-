@@ -101,4 +101,49 @@ public class Repetitive {
 			i++;
 		}
 	}
+	public void testFor2() {
+		//초기식 생략 for문
+		int i=0;
+		for(;i<10;i++) {
+			System.out.println(i + "번째 i 출력");
+		}
+		//조건식 생략 for문
+		for(int j = 0; ;j++) {
+			if(j < 10 ) {
+				System.out.println(j+"번째 j 출력");
+			}else {
+				break;
+			}
+		}
+		//증감식 생략 for문
+		for(int k = 0; k < 10;) {
+			System.out.println(k + "번째 k 출력");
+			k++;
+		}
+		//모두 생략
+		int l = 0;
+		for(;;) {
+			if(l < 10) {
+				System.out.println(l + "번째 l 출력");
+			}else {
+				break;
+			}
+			l++;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 }
