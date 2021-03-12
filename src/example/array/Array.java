@@ -40,18 +40,28 @@ public class Array {
 		
 		//전체 출력 - String 자체로 뽑아오는 것
 		System.out.println(Arrays.toString(strArr));
-		System.out.println(Arrays.toString(charArr));
+		System.out.println(Arrays.toString(charArr));		
+	}
+	public void testShallowCopy() {
+		//얕은 복사
+		int[] originArr = {1,2,3,4,5};
+		int[] copyArr = new int[10];
+		copyArr = originArr; //orugubArr의 주소값이 copyArr로 대입
 		
+		//같은 객체를 참조하는 것으로 바뀌어 copyArr은 길이 5.
+		System.out.println("=====변경 전=====");
+		System.out.println(Arrays.toString(originArr));
+		System.out.println(Arrays.toString(copyArr));
 		
+		originArr[2] = 100;
 		
+		System.out.println("=====변경 후=====");
+		System.out.println(Arrays.toString(originArr));
+		System.out.println(Arrays.toString(copyArr));
 		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println("=====주소 값====="); //참조변수이므로 주소값이 호출됨.
+		System.out.println(originArr);
+		System.out.println(copyArr);
 	}
 
 }
