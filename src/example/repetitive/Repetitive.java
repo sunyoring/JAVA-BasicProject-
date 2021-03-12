@@ -163,14 +163,14 @@ public class Repetitive {
 		int i = 2;
 		while (i < 10) {
 			System.out.println("==== " + i + "´Ü ====");
-			int j = 0;
+			int j = 0 ;
 			while (j < 10) {
 				j++;
 				if (j % 2 == 0)
 					continue;
 				System.out.println(i + " X " + j + " = " + i * j);
 			}
-			i++;
+			i++; 
 		}
 	}
 
