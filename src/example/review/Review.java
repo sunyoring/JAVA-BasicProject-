@@ -1,5 +1,7 @@
 package example.review;
 
+import java.util.Scanner;
+
 public class Review {
 	public void method1() {
 		// char <-> int
@@ -34,5 +36,13 @@ public class Review {
 		
 		System.out.println("sum3 : " + sum3);
 		System.out.println("sum4 : " + sum4);
+	}
+	public void method2() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		String result = num > 0 ? "양수다" : num == 0 ? "0이다" : "음수다";
+		System.out.println(result);
 	}
 }
