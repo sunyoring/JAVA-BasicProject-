@@ -88,6 +88,36 @@ public class Review {
 			}
 			i++;
 		}
+	}
+
+	public void method5() {
+		// 분기문을 이용한 중첩 반복문 구구단
+
+		// for문 (2,4,6,8단)
+		for (int i = 2; i < 10; i++) {
+			if (i % 2 == 1) {
+				continue;
+			}
+			System.out.println("=====" + i + "단 =====");
+			for (int j = 1; j < 10; j++) {
+				System.out.println(i + " X " + j + " = " + i * j);
+			}
+		}
+
+		// while문으로 구구단의 홀수곱 구하기
+		int i = 2;
+		while (i < 10) {
+			System.out.println("=====" + i + "단 =====");
+			int j = 0;
+			while (j < 10) {
+				j++;
+				if (j % 2 == 0) {
+					continue;
+				}
+				System.out.println(i + " X " + j + " = " + i * j);
+			}
+			i++;
+		}
 
 	}
 }
