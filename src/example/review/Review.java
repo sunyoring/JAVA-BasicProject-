@@ -45,4 +45,25 @@ public class Review {
 		String result = num > 0 ? "양수다" : num == 0 ? "0이다" : "음수다";
 		System.out.println(result);
 	}
+	public void method3() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("과일 이름 입력 : ");
+		String fruit = sc.nextLine();
+		
+		int price = 0;
+		switch(fruit) {
+		case "귤": 
+			price = 500;
+			break;
+		case "사과": 
+			price = 1000;
+			break;
+		case "바나나": 
+			price = 2000;
+			break;
+			default :
+				System.out.println("해당하는 과일이 없습니다.");
+		}
+		System.out.println(fruit+"의 가격은 " + price + "원 입니다.");
+	}
 }
