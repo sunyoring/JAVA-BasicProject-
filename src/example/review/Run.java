@@ -9,7 +9,8 @@ public class Run {
 //		re.method3();
 //		re.method4();
 //		re.method5();
-		re.method6();
+//		re.method6();
+		re.method7();
 	}
 
 }

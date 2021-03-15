@@ -118,44 +118,65 @@ public class Review {
 				System.out.println(i + " X " + j + " = " + i * j);
 			}
 			i++;
-		}	
+		}
 	}
+
 	public void method6() {
-		int[] originArr = {1,2,3,4,5};
-		
-		//얕은 복사
+		int[] originArr = { 1, 2, 3, 4, 5 };
+
+		// 얕은 복사
 		int[] copyArr = originArr;
-		
-		//깊은 복사for문
+
+		// 깊은 복사for문
 		int[] copyArr2 = new int[10];
-		for(int i = 0; i < originArr.length; i++) {
+		for (int i = 0; i < originArr.length; i++) {
 			copyArr2[i] = originArr[i];
 		}
-		
-		//깊은 복사 arraycopy()
+
+		// 깊은 복사 arraycopy()
 		int[] copyArr3 = new int[10];
 		System.arraycopy(originArr, 0, copyArr3, 0, originArr.length);
-		
-		//깊은 복사 Arrays.copyOf()
+
+		// 깊은 복사 Arrays.copyOf()
 		int[] copyArr4 = Arrays.copyOf(originArr, originArr.length);
-		
+
 		System.out.println("===========변경 전===========");
 		System.out.println("originArr : " + Arrays.toString(originArr));
 		System.out.println("copyArr : " + Arrays.toString(copyArr));
 		System.out.println("copyArr2 : " + Arrays.toString(copyArr2));
 		System.out.println("copyArr3 : " + Arrays.toString(copyArr3));
 		System.out.println("copyArr4 : " + Arrays.toString(copyArr4));
-		
+
 		originArr[0] = 5;
-		
+
 		System.out.println("===========변경 후===========");
 		System.out.println("originArr : " + Arrays.toString(originArr));
 		System.out.println("copyArr : " + Arrays.toString(copyArr));
 		System.out.println("copyArr2 : " + Arrays.toString(copyArr2));
 		System.out.println("copyArr3 : " + Arrays.toString(copyArr3));
 		System.out.println("copyArr4 : " + Arrays.toString(copyArr4));
-	
-	
-	
+
+	}
+
+	public void method7() {
+		// 가변 배열
+		int[][] arr = new int[2][];
+		arr[0] = new int[4];
+		arr[1] = new int[2];
+
+		// 초기화
+		int num = 1;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				arr[i][j] = num++;
+			}
+		}
+		// 출력
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 }
